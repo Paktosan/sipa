@@ -25,7 +25,7 @@ if __name__ == "__main__":
     parser.add_argument("--exposed", action="store_const", const='0.0.0.0',
                         dest='host', help="expose Sipa on the network")
     parser.add_argument("-p", "--port", action="store",
-                        help="tcp port to use", type=int, default=5000)
+                        help="tcp port to use", type=int, default=8080)
     args = parser.parse_args()
 
     def preparation(app):
